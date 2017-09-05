@@ -1,0 +1,40 @@
+<form name="form" novalidate >
+	<div>
+		<div style="background-color: #2fa4e7 !important;text-align: center;">
+			<h3>
+				<span style="color: #ffffff !important;">Create Obsolescence</span>
+			</h3>
+		</div>
+		<div class="control-group" ng-class="error('oId')">
+
+			<div class="controls">
+				<label class="control-label" for="oId">Store Number:</label>
+				&nbsp;&nbsp;<input id="oId" name="oId" type="text" ng-model="oId"
+					placeholder="Please Enter Store Number"  class="textbox" required /> <span
+					class="help-block" style="color:#F57061;" ng-show="form.oId.$invalid && form.oId.$dirty">
+					Store Number is required </span>
+			</div>
+		</div>
+		<div><br/></div>
+		<div class="control-group" ng-class="error('skuNo')">
+
+			<div class="controls">
+				<label class="control-label" for="skuNo">Sku Number: </label>
+				&nbsp;&nbsp;&nbsp;&nbsp;<input id="skuNo" name="skuNo" type="text"
+					ng-model="skuNo" placeholder="Please Enter Sku Number"  class="textbox" required /> <span
+					class="help-block" style="color:#F57061;"
+					ng-show="form.skuNo.$invalid && form.skuNo.$dirty">Sku
+					Number is required </span>
+			</div>
+		</div>
+		<div>
+			<br>
+		</div>
+		<div class="control-group" style="text-align: center;">
+			<div class="controls">
+				<button ng-disabled="form.$invalid"
+					class="btn btn-primary btn-group" ng-click="saveObsData()">Submit</button>
+			</div>
+		</div>
+	</div>
+</form>

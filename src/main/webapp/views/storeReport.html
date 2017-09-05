@@ -1,0 +1,78 @@
+<div id="skueditdiv">
+	<div class="custom-select-placeholder" style="margin-left: 100px">
+		<span id="placeholder-pages" ng-bind="selected_option"
+			style="align: center; color: red;"> </span>
+			<span id="placeholder-pages" ng-bind="success_option"
+			style="align: center; color: green;"> </span>
+	</div>
+	<div>
+		<table
+			class="table table-striped table-hover table-bordered customOuterTable"
+			data-toggle="table">
+			<tbody>
+				<tr class="firstTr">
+					<td class="firstTd">
+						<div class="firstTdDiv">
+							<center class="firstHeading" data-toggle="collapse"
+								data-target="#collapse3">Report</center>
+							<div class="row secondTdDiv" id="tb">
+								<div class="input-group thirdTdDiv">
+									<input class="form-control firstTdInput"
+										data-ng-model="searchItem" ng-change="searchProcess()"
+										placeholder="Search Item By Id" type="search" /> <span
+										class="glyphicon glyphicon-search firstSpan"> </span>
+								</div>
+							</div>
+						</div>
+						<table id="table3"
+							class="table table-striped table-hover table-bordered secondTable"
+							data-toggle="table">
+							<thead>
+								<tr class="theader">
+									<th>Stores List</th>
+
+									<th>Stores List</th>
+
+									<th>Stores List</th>
+
+									<th>Stores List</th>
+
+									<th class="firstTh">Stores List</th>
+
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="tdata" ng-repeat="store in pagedSearchResult "
+									ng-if="$index%5== 0" ng-click="setSelectedCosting(store)"
+									ng-class="{selected : store === idSelectedCosting}">
+									<span>
+										<td><a target='_blank'
+											ui-sref='inventoryReport({ storeNo :"{{pagedSearchResult[$index].storeNo}}"})'>{{pagedSearchResult[$index].storeNo}}</a></td>
+									</span>
+									<span>
+										<td><a target='_blank'
+											ui-sref='inventoryReport({ storeNo:"{{ pagedSearchResult[$index+1].storeNo }}"}) '>{{pagedSearchResult[$index+1].storeNo}}</a></td>
+									</span>
+									<span>
+										<td><a target='_blank'
+											ui-sref='inventoryReport({ storeNo:"{{ pagedSearchResult[$index+2].storeNo}}"})'>{{pagedSearchResult[$index+2].storeNo}}</a></td>
+									</span>
+									<span>
+										<td><a target='_blank'
+											ui-sref='inventoryReport({ storeNo:"{{ pagedSearchResult[$index+3].storeNo }}"})'>{{pagedSearchResult[$index+3].storeNo}}</a></td>
+									</span>
+									<span>
+										<td><a target='_blank'
+											ui-sref='inventoryReport({ storeNo:"{{ pagedSearchResult[$index+4].storeNo}}"})''>{{pagedSearchResult[$index+4].storeNo}}</a></td>
+									</span>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+
+</div>

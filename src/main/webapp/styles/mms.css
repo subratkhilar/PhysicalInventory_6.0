@@ -1,0 +1,411 @@
+.progress {
+    display: block;
+    text-align: center;
+    width: 0;
+    height: 5px;
+    background: red;
+    transition: width .3s;
+}
+.progress.hide {
+    opacity: 0;
+    transition: opacity 1.3s;
+}
+
+div ul.nav.navbar-nav li.activeli {
+	background: gainsboro;
+}
+
+#formContent label {
+	align: left;
+}
+
+.error{
+	color:red;
+}
+
+.errorDiv {
+	color: red;
+	border: 0px solid black;
+	width: 400px;
+	margin-bottom: 8px;
+}
+
+#mandatory {
+	color: red;
+}
+
+#links {
+	vertical-align: middle;
+	float: left;
+	color: blue
+}
+
+.messageDiv {
+	color: red;
+	border: 0px solid black;
+	/*width: 400px;*/
+	margin-bottom: 8px;
+	white-space: pre-wrap; /* CSS3 */
+	white-space: -moz-pre-wrap; /* Firefox */
+	white-space: -pre-wrap; /* Opera <7 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	word-wrap: break-word; /* IE */
+}
+
+#formsLogin {
+	font-family: Verdana;
+	font-size: 10pt;
+	border-color: red;
+	margin-left: 40%;
+}
+
+#forms {
+	font-family: Verdana;
+	font-size: 10pt;
+}
+
+.wwFormTable td {
+	align: center;
+	margin-left: 300px;
+}
+
+.tdLabel {
+	widht: 1%;
+}
+
+.errorMessage {
+	color: red;
+	border: 0px solid black;
+	width: 400px;
+	margin-bottom: 8px;
+}
+
+#resultsDiv table {
+	font-family: Verdana;
+	font-size: 7pt;
+}
+
+#resultsDiv td th {
+	font-family: Verdana;
+	font-size: 7pt;
+	/*width:30px;
+	word-wrap:break-word;*/
+}
+
+.shortwidthth {
+	font-family: Verdana;
+	font-size: 7pt;
+	width: 4%;
+	word-wrap: break-word;
+	overflow-x: auto;
+}
+
+.lessmediumwidthth {
+	font-family: Verdana;
+	font-size: 7pt;
+	width: 7%;
+	word-wrap: break-word;
+}
+
+.mediumwidthth {
+	font-family: Verdana;
+	font-size: 7pt;
+	width: 9%;
+	word-wrap: break-word;
+}
+
+.longwidthth {
+	font-family: Verdana;
+	font-size: 7pt;
+	width: 11%;
+	word-wrap: break-word;
+}
+
+.longwidththMain {
+	font-family: Verdana;
+	font-size: 7pt;
+	font-weight: bold;
+	/*width:20%;*/
+	word-wrap: break-word;
+}
+
+.shortwidthtd {
+	font-family: Verdana;
+	font-size: 7pt;
+	/*width:30px;*/
+	word-wrap: break-word;
+	overflow-x: auto;
+}
+
+.mediumwidthtd {
+	font-family: Verdana;
+	font-size: 7pt;
+	/*width:40px;*/
+	word-wrap: break-word;
+	overflow-x: auto;
+}
+
+.longwidthtd {
+	font-family: Verdana;
+	font-size: 7pt;
+	width: 10%;
+	/*width:50px;*/
+	word-wrap: break-word;
+}
+
+/*!
+ * Custom Css
+ */
+@media ( max-width : 980px) {
+	.buttonMargin {
+		width: 50%;
+		margin: 0 25%;
+	}
+}
+
+@media only screen and ( min-device-width : 981px) {
+	.buttonMargin {
+		margin-left: 16.6666667%;
+	}
+}
+
+@media ( min-width : 981px) {
+	.navbar-nav>li.logout {
+		float: right;
+	}
+	.buttonMargin {
+		margin-left: 16.6666667%;
+	}
+}
+
+.container.marginTop {
+	margin-top: 20px !important;
+}
+
+.marginTop {
+	margin-top: 10px;
+}
+
+.form-group.required .control-label:after {
+	content: "*";
+	color: red;
+}
+
+.panel-body.panel-no-padding {
+	padding: 0;
+}
+
+div.row.header-bg {
+	background: #005BB2;
+	margin: 0;
+}
+
+h1.text-muted.header-title {
+	text-align: center;
+	margin-top: 5px;
+	color: thistle;
+}
+
+p.text-muted.header-para {
+	float: right;
+	color: thistle;
+	margin-top: 15px
+}
+
+div.top,div.bottom {
+	/*float: right;*/
+	
+}
+
+div.footer {
+	border: 1px solid steelblue;
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+	margin: 10px 0;
+}
+
+div ul.nav.navbar-nav li.activeli {
+	background: gainsboro;
+}
+
+.align-button-menu {
+	background: black;
+	margin-top: 0;
+}
+
+.span-button-menu {
+	background: white;
+}
+
+.small-header-prop {
+	background: steelblue;
+	padding: 7px;
+	height: 50px;
+}
+
+.large-font {
+	font-size: large;
+}
+
+#small-header-title {
+	color: thistle;
+}
+
+.medium-font {
+	font-size: medium;
+}
+
+label.mandatory {
+	color: red;
+	float: right;
+}
+
+.ieWidth {
+	width: 100%;
+}
+
+.sub-header-custom {
+	background: #d9edf7 !important;
+	border: 1px !important;
+	color: #31708f !important;
+	font-family: verdana !important;
+	border-color: #bce8f1 !important;
+	padding: 10px 15px !important;
+	border-bottom: 1px solid transparent !important;
+	border-top-right-radius: 3px !important;
+	border-top-left-radius: 3px !important;
+	width: 100%;
+}
+
+.reportSubHeaderLongWidth {
+	font-family: Verdana;
+	font-size: 7pt;
+	font-weight: bold;
+	width: 20%;
+	word-wrap: break-word;
+}
+
+.reportSubHeaderMediumWidth {
+	font-family: Verdana;
+	font-size: 7pt;
+	font-weight: bold;
+	width: 10%;
+	word-wrap: break-word;
+}
+
+.reportSubHeaderShortWidth {
+	font-family: Verdana;
+	font-size: 7pt;
+	font-weight: bold;
+	width: 7%;
+	word-wrap: break-word;
+}
+
+.resultPanel {
+	border: 1px solid transparent !important;
+	border-color: #bce8f1 !important;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+div.resultPanel>h4 {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+#gnrcSelect {
+	float: left;
+}
+
+#createEpoSkus_label_mandatory {
+	float: right;
+}
+
+.Switch {
+	position: relative;
+	display: inline-block;
+	font-size: 1.6em;
+	font-weight: bold;
+	color: #ccc;
+	text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.8);
+	height: 18px;
+	padding: 6px 6px 5px 6px;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	background: #ececec;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1), inset 0px 1px 3px 0px
+		rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+
+body.IE7 .Switch {
+	width: 78px;
+}
+
+.Switch span {
+	display: inline-block;
+	width: 35px;
+}
+
+.Switch span.On {
+	color: #33d2da;
+}
+
+.Switch .Toggle {
+	position: absolute;
+	top: 1px;
+	width: 37px;
+	height: 25px;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 4px;
+	background: #fff;
+	background: -moz-linear-gradient(top, #ececec 0%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ececec),
+		color-stop(100%, #ffffff));
+	background: -webkit-linear-gradient(top, #ececec 0%, #ffffff 100%);
+	background: -o-linear-gradient(top, #ececec 0%, #ffffff 100%);
+	background: -ms-linear-gradient(top, #ececec 0%, #ffffff 100%);
+	background: linear-gradient(top, #ececec 0%, #ffffff 100%);
+	box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.5);
+	z-index: 999;
+	-webkit-transition: all 0.15s ease-in-out;
+	-moz-transition: all 0.15s ease-in-out;
+	-o-transition: all 0.15s ease-in-out;
+	-ms-transition: all 0.15s ease-in-out;
+}
+
+.Switch.On .Toggle {
+	left: 2%;
+}
+
+.Switch.Off .Toggle {
+	left: 54%;
+}
+
+/* Round Switch */
+.Switch.Round {
+	padding: 0px 20px;
+	border-radius: 40px;
+}
+
+body.IE7 .Switch.Round {
+	width: 1px;
+}
+
+.Switch.Round .Toggle {
+	border-radius: 40px;
+	width: 14px;
+	height: 14px;
+}
+
+.Switch.Round.On .Toggle {
+	left: 3%;
+	background: #33d2da;
+}
+
+.Switch.Round.Off .Toggle {
+	left: 58%;
+}

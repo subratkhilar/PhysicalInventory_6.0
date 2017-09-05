@@ -1,0 +1,100 @@
+<div id="skueditdiv">
+	<div>
+		<table class="table table-striped table-hover table-bordered customOuterTable" data-toggle="table">
+			<tbody>
+				<tr class="firstTr">
+					<td class="firstTd">
+						<div class="firstTdDiv">
+							<center class="firstHeading" data-toggle="collapse" data-target="#collapse3"> Costing  </center>
+							<div class="row secondTdDiv" id="tb">
+								<div class="input-group thirdTdDiv">
+									<input class="form-control firstTdInput" data-ng-model="searchItem" ng-change="searchProcess()" placeholder="Search Item By Id" type="search" /> 
+									<span class="glyphicon glyphicon-search firstSpan" >
+									</span>
+								</div>
+								<a class="firstAnchor" href=""  ng-click="exportData()" >Export</a>
+								<p class="input-group firstPara">
+									<input type="text" class="form-control secondInput" uib-datepicker-popup ng-model="date" is-open="datepickerOptions.isOpened" show-button-bar="false" datepicker-options="datepickerOptions" ng-required="true" close-text="Close" />
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default" ng-click="datepickerOptions.isOpened=!datepickerOptions.isOpened">
+											<i class="glyphicon glyphicon-calendar"></i>
+										</button>
+										<p class="alert secondPara" ng-if="isvalidDate" ng-model="dateVal">Please enter date .</p>
+									</span>
+								</p>
+							</div>
+						</div>
+						<table id="table3" class="table table-striped table-hover table-bordered secondTable" data-toggle="table">
+							<thead>
+								<tr class="theader">
+									<th>Stores List</th>
+									<th>Action</th>
+									<th>Stores List</th>
+									<th>Action</th>
+									<th>Stores List</th>
+									<th>Action</th>
+									<th>Stores List</th>
+									<th>Action</th>
+									<th class="firstTh">Stores List</th>
+									<th class="secondTh">Action</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="tdata" ng-repeat="store in pagedSearchResult " ng-if="$index%5== 0" ng-click="setSelectedCosting(store)" ng-class="{selected : store === idSelectedCosting}">
+									<span>
+										<td>{{pagedSearchResult[$index].storeNo}}</td>
+										<td class="center"><input type="checkbox" ng-if="pagedSearchResult[$index].storeNo" ng-model="pagedSearchResult[$index].isChecked" /></td>
+									</span>
+									<span>
+										<td>{{pagedSearchResult[$index+1].storeNo}}</td>
+										<td class="center"><input type="checkbox" ng-if="pagedSearchResult[$index+1].storeNo" ng-model="pagedSearchResult[$index+1].isChecked" /></td>
+									</span>
+									 <span>
+										<td>{{pagedSearchResult[$index+2].storeNo}}</td>
+										<td class="center"><input type="checkbox" ng-if="pagedSearchResult[$index+2].storeNo" ng-model="pagedSearchResult[$index+2].isChecked" /></td>
+									</span> 
+									<span>
+										<td>{{pagedSearchResult[$index+3].storeNo}}</td>
+										<td class="center"><input type="checkbox" ng-if="pagedSearchResult[$index+3].storeNo" ng-model="pagedSearchResult[$index+3].isChecked" /></td>
+									</span> 
+									<span>
+										<td>{{pagedSearchResult[$index+4].storeNo}}</td>
+										<td class="center"><input type="checkbox" ng-if="pagedSearchResult[$index+4].storeNo" ng-model="pagedSearchResult[$index+4].isChecked" /></td>
+									</span>
+								</tr>
+								<tr>
+									<td colspan="10 secondTd">
+										 <uib-pagination data-ng-hide="skus.length == '0'" data-ng-model="pageNo"
+											items-per-page="recordsPerPage" total-items="stores.length/5"
+											data-ng-click="searchPageChange(pageNo)" max-size="5"
+											class="pagination-sm firstPagination" boundary-links="true" rotate="false"
+											num-pages="numPages">
+										</uib-pagination> 
+										<span class="secondSpan">Displaying {{startIndex+1}} to {{startIndex+pagedSearchResult.length}} of {{stores.length}} items</span>
+										<br>
+										<span class="thirdSpan">
+											<span class="fourthSpan">Items Per Page
+												<select class="selectpicker" data-ng-model="recordsPerPage" data-ng-change="dispalyData(recordsPerPage)">
+												    <option>10</option>
+												    <option>25</option>
+												    <option>50</option>
+												    <option>75</option>
+											   </select>
+										   </span>
+											<span class="fifthSpan"> Select All&nbsp; 
+												<input class="thirdInput" type="checkbox" ng-checked="removeCheck1" ng-model="selectCheck" data-ng-click="selectAll(selectCheck)" />
+											</span>
+											<span class="sixthSpan">Remove All&nbsp;
+												<input class="fourthInput" type="checkbox" ng-checked="removeCheck2"  ng-model="removeCheck" data-ng-click="removeAll(removeCheck)" />
+											</span>
+										</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

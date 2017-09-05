@@ -1,0 +1,105 @@
+.customOuterTable{
+	width: 84%!important;
+	margin-left:8%; 
+	border: 1px;
+	border-color: black;
+}
+.firstTr{
+	width: 100%;
+}
+.firstTd{
+	background-color: white; 
+	margin-bottom: 0px !important;
+	 padding-bottom: 0px !important; 
+	margin-left: 0px !important;
+	 padding-left: 0px !important;
+	 margin-top: 0px !important; 
+	padding-top: 0px !important; 
+	padding-right: 0px !important;
+}
+.firstTdDiv{
+	background-color: #e0ecff; 
+	width: 100%; 
+	height: 67px;
+}
+.firstHeading{
+	font-size: 20px;
+}
+.secondTdDiv{
+	margin-left: 3px !important; 
+	margin-top: 5px;
+}
+.thirdTdDiv{
+	float: left;padding-left: 15px;padding-right: 16px;width: 21%;
+}
+.firstTdInput{
+	height: 32px;
+}
+.firstSpan{
+	position: absolute;margin-top: 9px;margin-left: -21px;z-index: 100;
+}
+.firstAnchor{
+	margin-right:8%;float:right;
+}
+.firstPara{
+	width:15%;
+}
+.secondInput{
+	height: 32px;
+}
+.secondPara{
+	color: red; margin-bottom: 0px; padding-bottom: 0px; padding-top: 0px; margin-top: -56PX !important;
+}
+.secondTable{
+	margin-bottom: 0px; width: 100% !important;
+}
+.firstTh{
+	width:14%;
+}
+.secondTh{
+	width:10%;
+}
+.secondTd{
+	padding-top: 0px; padding-left: 0px; padding-bottom: 0px;
+}
+.firstPagination{
+	padding-bottom: 0px;margin-bottom: 0px;margin-top: 0px;
+}
+.secondSpan{
+	float: right; margin-top: 5px;margin-bottom:5px;
+}
+.thirdSpan{
+	float: right; margin-top: 0px;margin-bottom:5px;
+}
+.fourthSpan{
+	float: right; margin-top: -1px;margin-bottom:5px;
+}
+.fifthSpan{
+	float: right; margin-top: 3px !important;margin-bottom:5px;
+}
+.thirdInput{
+	float: right; margin-top: 1px !important;margin-bottom:5px;
+}
+.sixthSpan{
+	float: right; margin-top:3px !important;margin-bottom:5px;
+}
+.fourthInput{
+	float: right; margin-top: 1px !important;margin-bottom:5px;
+}
+.fourthDiv{
+	margin-left:7%;
+}
+.thirdPara{
+	color: red; margin-bottom: 0px; padding-bottom: 0px; padding-top: 0px; margin-top: 0PX;
+}
+.fifthDiv{
+	margin-top: 0.5%;
+}
+.sisxtDiv{
+	width: 80%;
+	margin-top: 7.3%;
+}
+.selected {
+  background-color: #ffff80 !important;
+}
+}

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Inventory Report</title>
+
+<style>
+@media print {
+.selectedBackground {
+    background-color: #bfbfbf !important;
+    -webkit-print-color-adjust: exact; 
+}}
+.tableCls {
+	border: none !important;
+}
+
+.tableSerialCls {
+	border: none !important;
+	font-weight: bold;
+	text-align: right;
+}
+
+tr {
+	border: none;
+}
+
+th {
+	style width: 33%;
+	border-bottom: 2px solid #000;
+}
+
+td {
+	border-right: 1px solid #000;
+}
+.selectedBackground{
+background-color: #bfbfbf;
+}
+.tdAlign {
+	text-align: right;
+	padding-right: 10px;
+}
+.tdAlign1 {
+	padding-left: 10px;
+	padding-right: 10px;
+	border-right: 0px;
+	text-align: right;
+}
+.tddescAlign1 {
+	padding-left: 10px;
+	border-right: 0px;
+
+}
+
+.tddescAlign {
+	padding-left: 10px;
+}
+.subpoint {
+	padding-left: 20px;
+}
+
+table,th {
+	border-collapse: collapse;
+}
+
+th {
+	text-align: left;
+}
+</style>
+</head>
+<body style="font-size:9px">
+	<div style="padding-top: 30px; font-size: 12px;">
+		<p style="width: 150px" align="left">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REPORT:CGS06041<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;USA<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DATE: 12/01/15<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FINAL<br>
+		</p>
+		<p align="center" font-size="55px"
+			style="width: 100%; margin-top: -7%">
+			SELLING PAINT STORES<br>
+			<r> INVENTORY ANALYSIS REPORT<br>
+			DIVISION/AREA/DISTRICT/STORE LEVEL REPORT<br>
+			NOVEMBER 01,2015<br>
+		</p>
+		<p align="right" STYLE="margin-top: -70px">
+			PAGE:3<br>TIME:16:30:45<br>FINAL
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+		</p>
+		<P style="font-size:12px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DIV:&nbsp;&nbsp;
+			{{reportlist.headerList[0]}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			AREA:&nbsp;&nbsp; {{reportlist.headerList[1]}}
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DIST: {{reportlist.headerList[2]}}
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STORE: {{reportlist.headerList[3]}}</P>
+	</div>
+	<table class="tableCls" style="font-size:9px">
+		<tr>
+			<td class="tableSerialCls" width="1%" valign="top">
+				<table class="tableSerialCls" height="100%">
+					<tr>
+					<tr>
+						<td class="tableSerialCls"></td>
+					</tr>
+					<tr>
+						<td class="tableSerialCls"
+							style="padding-top: 48px !important;">1</td>
+					</tr>
+					<tr>
+						<td class="tableSerialCls" style="padding-top: 4px !important;">2</td>
+					</tr>
+					<td class="tableSerialCls">&nbsp;</td>
+					<tr>
+					</tr>
+					<tr>
+						<td class="tableSerialCls" style="padding-top: 2px !important;">3</td>
+					</tr>
+					<tr>
+						<td class="tableSerialCls">4</td>
+					</tr>
+
+
+					<tr>
+						<td class="tableSerialCls">
+							<table class="tableSerialCls">
+								<tr>
+									<td class="tableSerialCls" style="padding-top: 4px !important;">5</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls" style="padding-top: 3px !important;">
+										5a</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls">&nbsp;</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls" style="padding-top: 6px !important;">6</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls" style="padding-top: 3px !important;">7</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls" style="padding-top: 2px !important;">8
+									</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls" style="padding-top: 4px !important;">9</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls" style="padding-top: 3px !important;">10</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls" style="padding-top: 3px !important;">11</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls" style="padding-top: 2px !important;">12</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls" style="padding-top: 3px !important;">13</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls" style="padding-top: 4px !important;">14</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls">&nbsp;</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls" style="padding-top: 2px !important;">15</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls" style="padding-top: 1px !important;">15a</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls">&nbsp;</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls" style="padding-top: 2px !important;">16</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls">&nbsp;</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls" style="padding-top: 0px !important;">17</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls" style="padding-top: 1px !important;">18</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls">&nbsp;</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls" style="padding-top: 2px !important;">19</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls" style="padding-top: 2px !important;">19a</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls">&nbsp;</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls">20</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls" style="padding-top: 2px !important;">20a</td>
+
+								</tr>
+								<tr>
+									<td class="tableSerialCls">&nbsp;</td>
+								</tr>
+
+
+								<tr>
+									<td class="tableSerialCls" style="padding-top: 2px !important;">21</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls" style="padding-top: 1px !important;">22</td>
+								</tr>
+
+								<tr>
+									<td class="tableSerialCls" style="padding-top: 33px !important;">23
+									</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls" style="padding-top: 1px !important;">24
+									</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls" style="padding-top: 11px !important;">25</td>
+								</tr>
+								
+								<tr>
+									<td class="tableSerialCls">26</td>
+								</tr>
+								<tr>
+									<td class="tableSerialCls" style="padding-top: 12px !important;">27</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td width="100%" class="tableCls">
+				<table border="1px" width="100%" style="min-width:850px !important">
+					<tr>
+						<td>
+							<table width="100%">
+								<tr class="selectedBackground" style="background-color:grey; height:46px; font-size:11px">
+									<th style="width: 32%">DESCRIPTION</th>
+									<th style="width: 8.37%">PAINT</th>
+									<th style="width: 8.37%">BRUSHES &amp; ROLLERS</th>
+									<th style="width: 8.37%">ASSOC PRODUCTS</th>
+									<th style="width: 8.37%">FLOOR COVERING</th>
+									<th style="width: 8.37%">SPRAY EQUIPMENT</th>
+									<th style="width: 8.37%">WALL COVERING</th>
+									<th style="width: 8.37%">WINDOW TREATMENT</th>
+									<th style="width: 7.37%">TOTAL</th>
+								</tr>
+							</table>
+							<table width="100%">
+								<tr ng-repeat="report in reportlist.paint track by $index" sty>
+									<td width="100%">
+										<table ng-if="$index < 27" width="100%" border="0px">
+
+											<tr style="height: 15px !important;" ng-class="{selectedBackground : $index === 24 || $index == 23 || $index == 19 || $index === 20 }">
+												<td class="tddescAlign" style="width: 33%" ng-class="{subpoint : ($index >= 6 && $index <= 15) || ($index >= 18 && $index <= 20)}"><br
+													ng-if="$index==2"> <br ng-if="$index==16"> <br
+													ng-if="$index==18"> <br ng-if="$index==19"> <br
+													ng-if="$index==21"> <br ng-if="$index==23"> <br
+													ng-if="$index==25"> <br ng-if="$index==30">
+													{{reportlist.description[$index]}}</td>
+												<td class="tdAlign" style="width: 8.37%"><br
+													ng-if="$index==2"> <br ng-if="$index==16"> <br
+													ng-if="$index==18"> <br ng-if="$index==19"> <br
+													ng-if="$index==21"> <br ng-if="$index==23"> <br
+													ng-if="$index==25"> <br ng-if="$index==30">{{reportlist.paint[$index]}}</td>
+												<td class="tdAlign" style="width: 8.37%"><br
+													ng-if="$index==2"> <br ng-if="$index==16"> <br
+													ng-if="$index==18"> <br ng-if="$index==19"> <br
+													ng-if="$index==21"> <br ng-if="$index==23"> <br
+													ng-if="$index==25"> <br ng-if="$index==30">{{reportlist.brush[$index]}}
+												</td>
+												<td class="tdAlign" style="width: 8.37%"><br
+													ng-if="$index==2"> <br ng-if="$index==16"> <br
+													ng-if="$index==18"> <br ng-if="$index==19"> <br
+													ng-if="$index==21"> <br ng-if="$index==23"> <br
+													ng-if="$index==25"> <br ng-if="$index==30">{{reportlist.assocprod[$index]}}
+												</td>
+
+												<td class="tdAlign" style="width: 8.37%"><br
+													ng-if="$index==2"> <br ng-if="$index==16"> <br
+													ng-if="$index==18"> <br ng-if="$index==19"> <br
+													ng-if="$index==21"> <br ng-if="$index==23"> <br
+													ng-if="$index==25"> <br ng-if="$index==30">{{reportlist.floor[$index]}}
+												</td>
+												<td class="tdAlign" style="width: 8.37%"><br
+													ng-if="$index==2"> <br ng-if="$index==16"> <br
+													ng-if="$index==18"> <br ng-if="$index==19"> <br
+													ng-if="$index==21"> <br ng-if="$index==23"> <br
+													ng-if="$index==25"> <br ng-if="$index==30">{{reportlist.spray[$index]}}</td>
+												<td class="tdAlign"><br ng-if="$index==2"> <br
+													ng-if="$index==16"> <br ng-if="$index==18"> <br
+													ng-if="$index==19"> <br ng-if="$index==21"> <br
+													ng-if="$index==23"> <br ng-if="$index==25"> <br
+													ng-if="$index==30">{{reportlist.wall[$index]}}</td>
+												<td class="tdAlign" style="width: 8.37%"><br
+													ng-if="$index==2"> <br ng-if="$index==16"> <br
+													ng-if="$index==18"> <br ng-if="$index==19"> <br
+													ng-if="$index==21"> <br ng-if="$index==23"> <br
+													ng-if="$index==25"> <br ng-if="$index==30">{{reportlist.windowtreat[$index]}}
+												</td>
+												<td class="tdAlign" style="width: 7.37%"><br
+													ng-if="$index==2"> <br ng-if="$index==16"> <br
+													ng-if="$index==18"> <br ng-if="$index==19"> <br
+													ng-if="$index==21"> <br ng-if="$index==23"> <br
+													ng-if="$index==25"> <br ng-if="$index==30">{{reportlist.totalList[$index]}}
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<table border="1px" width="99.7%" style="margin-top: 2px;margin-bottom: 2px;margin-left: 2px;margin-right: 2px;padding-right:2px;">
+					<tr>
+						<td>
+							<table border="1px" width="99.7%" style="margin-top: 2px;margin-bottom: 2px;margin-left: 2px;margin-right: 2px;padding-right:2px;">
+								<tr>
+									<td>
+										<table width="100%">
+											<tr ng-repeat="report in reportlist.paint track by $index"
+												sty>
+												<td width="100%">
+													<table ng-if="$index >= 27 && $index <= 31" width="100%" border="0px">
+														<tr ng-if="$index === 27">
+															<td class="tddescAlign1" style="width: 33%">(PREVIOUS YEAR END INVENTORY RESULTS)<br></td>
+															<td class="tdAlign1" style="width: 8.37%"><br><br></td>
+															<td class="tdAlign1" style="width: 8.37%"><br>
+															</td>
+															<td class="tdAlign1" style="width: 8.37%"><br>
+															</td>
+
+															<td class="tdAlign1" style="width: 8.37%"><br>
+															</td>
+															<td class="tdAlign1" style="width: 8.37%"><br></td>
+															<td class="tdAlign1"><br></td>
+															<td class="tdAlign1" style="width: 8.37%"><br>
+															</td>
+															<td class="tdAlign1" style="width: 7.37%"><br>	
+															</td>
+														</tr>
+														<tr >
+															<td class="tddescAlign1" style="width: 33%"><br
+																ng-if="$index==2"> <br ng-if="$index==16"> <br
+																ng-if="$index==18"> <br ng-if="$index==19"> <br
+																ng-if="$index==21"> <br ng-if="$index==23"> <br
+																ng-if="$index==25"> <br ng-if="$index==29">
+																<br ng-if="$index==31">{{reportlist.description[$index]}}</td>
+															<td class="tdAlign1" style="width: 8.37%"><br
+																ng-if="$index==2"> <br ng-if="$index==16"> <br
+																ng-if="$index==18"> <br ng-if="$index==19"> <br
+																ng-if="$index==21"> <br ng-if="$index==23"> <br
+																ng-if="$index==25"> <br ng-if="$index==29">
+																<br ng-if="$index==31">{{reportlist.paint[$index]}}</td>
+															<td class="tdAlign1" style="width: 8.37%"><br
+																ng-if="$index==2"> <br ng-if="$index==16"> <br
+																ng-if="$index==18"> <br ng-if="$index==19"> <br
+																ng-if="$index==21"> <br ng-if="$index==23"> <br
+																ng-if="$index==25"> <br ng-if="$index==29">
+																<br ng-if="$index==31">{{reportlist.brush[$index]}}
+															</td>
+															<td class="tdAlign1" style="width: 8.37%"><br
+																ng-if="$index==2"> <br ng-if="$index==16"> <br
+																ng-if="$index==18"> <br ng-if="$index==19"> <br
+																ng-if="$index==21"> <br ng-if="$index==23"> <br
+																ng-if="$index==25"> <br ng-if="$index==29">
+																<br ng-if="$index==31">{{reportlist.assocprod[$index]}}
+															</td>
+
+															<td class="tdAlign1" style="width: 8.37%"><br
+																ng-if="$index==2"> <br ng-if="$index==16"> <br
+																ng-if="$index==18"> <br ng-if="$index==19"> <br
+																ng-if="$index==21"> <br ng-if="$index==23"> <br
+																ng-if="$index==25"> <br ng-if="$index==29">
+																<br ng-if="$index==31">{{reportlist.floor[$index]}}
+															</td>
+															<td class="tdAlign1" style="width: 8.37%"><br
+																ng-if="$index==2"> <br ng-if="$index==16"> <br
+																ng-if="$index==18"> <br ng-if="$index==19"> <br
+																ng-if="$index==21"> <br ng-if="$index==23"> <br
+																ng-if="$index==25"> <br ng-if="$index==29">
+																<br ng-if="$index==31">{{reportlist.spray[$index]}}</td>
+															<td class="tdAlign1"><br ng-if="$index==2"> <br
+																ng-if="$index==16"> <br ng-if="$index==18"> <br
+																ng-if="$index==19"> <br ng-if="$index==21"> <br
+																ng-if="$index==23"> <br ng-if="$index==25"> <br
+																ng-if="$index==29"><br ng-if="$index==31">{{reportlist.wall[$index]}}</td>
+															<td class="tdAlign1" style="width: 8.37%"><br
+																ng-if="$index==2"> <br ng-if="$index==16"> <br
+																ng-if="$index==18"> <br ng-if="$index==19"> <br
+																ng-if="$index==21"> <br ng-if="$index==23"> <br
+																ng-if="$index==25"> <br ng-if="$index==29">
+																<br ng-if="$index==31">{{reportlist.windowtreat[$index]}}
+															</td>
+															<td class="tdAlign1" style="width: 7.37%"><br
+																ng-if="$index==2"> <br ng-if="$index==16"> <br
+																ng-if="$index==18"> <br ng-if="$index==19"> <br
+																ng-if="$index==21"> <br ng-if="$index==23"> <br
+																ng-if="$index==25"> <br ng-if="$index==29">
+																<br ng-if="$index==31">{{reportlist.totalList[$index]}}
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
